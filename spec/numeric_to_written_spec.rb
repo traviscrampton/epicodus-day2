@@ -9,5 +9,7 @@ describe('Fixnum#numeric_to_written') do
   it("takes all double digit numbers and returns the written out value") do
     expect(34.numeric_to_written()).to(eq("thirty four"))
   end
-  
+  it("takes all triple digit numbers and returns the written out value") do
+    expect(105.numeric_to_written()).to(eq("one hundred and five"))
+  end  
 end
